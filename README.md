@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # AStar
 =======
 🚀 A* Search Visualizer
@@ -35,4 +34,4 @@ Example: astar_small.txt
 # source and destination
 S,1
 D,4
->>>>>>> f245be1 (AStar Search solved Problem 1)
+
