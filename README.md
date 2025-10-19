@@ -1,5 +1,3 @@
-# AStar
-=======
 🚀 A* Search Visualizer
 
 A Java-based implementation of the A* search algorithm with multiple heuristics and a simple interactive visualization.
