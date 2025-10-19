@@ -32,7 +32,7 @@ public class GraphPanel extends JPanel {
         Graphics2D g2 = (Graphics2D) g0;
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
-        // Draw edges
+
         g2.setStroke(new BasicStroke(2));
         for (Edge e : graph.edges) {
             Vertex a = graph.vertices.get(e.u);
@@ -47,7 +47,6 @@ public class GraphPanel extends JPanel {
             g2.drawString(String.format("%.1f", e.w), mx + 3, my - 3);
         }
 
-        // Highlight path
         if (lastResult != null && lastResult.found) {
             g2.setStroke(new BasicStroke(4));
             g2.setColor(Color.RED);
@@ -61,7 +60,6 @@ public class GraphPanel extends JPanel {
             }
         }
 
-        // Draw nodes
         for (Vertex v : graph.vertices.values()) {
             Point2D p = nodeToPoint(v);
             int r = 12;
@@ -79,7 +77,7 @@ public class GraphPanel extends JPanel {
             g2.drawString(String.valueOf(v.id), p.x - 6, p.y + 4);
         }
 
-        // Mark S/D
+
         if (graph.source != null && graph.vertices.containsKey(graph.source)) {
             Point2D p = nodeToPoint(graph.vertices.get(graph.source));
             g2.setColor(Color.GREEN.darker());
