@@ -4,7 +4,7 @@ A Java-based implementation of the A* search algorithm with multiple heuristics 
 The program finds the optimal path between two nodes in a 2D grid graph and compares the performance of different heuristic modes.
 
  Features
-🔹 A* Search Modes
+ A* Search Modes
 
 Zero heuristic (UCS) — behaves like Uniform Cost Search
 
